@@ -9,6 +9,10 @@
 - **2026-09-18 · blocks 8.1** — Chat hosting. GitHub Pages is static, so the
   chat needs a small backend holding an API key (e.g. a Cloudflare Worker,
   rate-limited, cheap model). Who pays, and what monthly cap?
-- **2026-09-18 · blocks 2.7** — The resume site URL.
-- **2026-09-18 · blocks every commit** — Which email signs commits in this repo?
-  It will be public. Suggest the GitHub noreply address, not the work address.
+
+## Closed
+
+- **2026-09-19** — Commit email: the GitHub noreply address for
+  `danbeseda-axolt`.
+- **2026-09-19** — Where the resume lives: the same repo,
+  github.com/danbeseda-axolt/practical-ai, outside `company-brain/`.

@@ -10,8 +10,8 @@ few weeks to something the team relies on.
 **1. Clone it and strip the examples.**
 
 ```bash
-git clone <this repo> company-brain
-cd company-brain
+git clone https://github.com/danbeseda-axolt/practical-ai.git
+cd practical-ai/company-brain
 rm decisions/0001-separate-collection-from-analysis.md
 ```
 

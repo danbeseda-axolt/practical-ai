@@ -75,7 +75,8 @@ work is appended at the end of its phase.
   Rendered, navigable view of the knowledge files.
 - [ ] **2.5 Reports pages** · `builder-site`
 - [ ] **2.6 Build log page** · `builder-site`
-- [ ] **2.7 Link from and to Dan's resume** · `builder-site` · BLOCKED: resume site URL
+- [ ] **2.7 Link to and from Dan's resume** · `builder-site`
+  The resume lives in the same repo, at `/resume` (outside `company-brain/`).
 
 ## Phase 3 — Founder desk
 
