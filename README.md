@@ -2,8 +2,8 @@
 
 **Dan Beseda — operator who builds the AI systems a company runs on.**
 
-I have run consumer brands end to end: founded one and took it from zero to
-EUR 500,000 in revenue, and now run operations at a US direct-to-consumer brand,
+I have run consumer brands end to end: co-founded one and took it from zero to
+seven figures in revenue, and now run operations at a US direct-to-consumer brand,
 where I built the company's knowledge base and the agents that work on top of
 it. This repository is the evidence, in public.
 
