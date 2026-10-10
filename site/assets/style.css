@@ -121,14 +121,6 @@ a.card:hover { transform: translateY(-4px) rotate(-.6deg); }
 .card.soon .go { color: #7c8196; }
 @media (max-width: 800px) { .work { grid-template-columns: 1fr; } .card { padding: 26px; border-radius: 22px; } }
 
-/* ---------- the receipts on yellow ---------- */
-.receipts { background: var(--yellow); color: var(--ink); }
-.nums { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; text-align: center; }
-.nums b { display: block; font-family: var(--head); font-weight: 400; font-size: clamp(56px, 7vw, 96px); line-height: 1; margin-bottom: 8px; }
-.nums span { display: block; font-weight: 600; font-size: 17px; line-height: 1.35; max-width: 16em; margin: 0 auto; }
-.nums a { display: inline-block; margin-top: 10px; font-family: var(--mono); font-size: 12px; }
-@media (max-width: 800px) { .nums { grid-template-columns: 1fr 1fr; row-gap: 44px; } }
-
 /* ---------- how it works ---------- */
 .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
 .step .blob { width: 88px; height: 88px; margin-bottom: 22px; }
