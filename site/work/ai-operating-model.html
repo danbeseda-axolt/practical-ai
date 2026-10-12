@@ -195,8 +195,32 @@ footer{padding-block:28px 56px;font-size:14px;color:var(--ink-3);border-top:1px 
 .hero .kpis{margin-top:36px}
 </style>
 
-<style>.sitebar{background:#F7B4C4;font-family:var(--display);}.sitebar .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:14px;flex-wrap:wrap}.sitebar a{color:#15171C;text-decoration:none;font-weight:800}.sitebar nav{display:flex;gap:18px;font-size:15px}.sitebar nav a{font-weight:700}</style>
-<div class="sitebar"><div class="wrap"><a href="../">← Dan Beseda</a><nav><a href="../#work">Work</a><a href="company-brain.html">Company Brain</a><a href="../resume.html">Resume</a><a href="../#hire">Get in Touch</a></nav></div></div>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<style>
+/* Site palette (matches assets/style.css) */
+:root{
+  --bg:#fbf6ec; --bg-alt:#f3e9d6; --card:#ffffff; --ink:#14213d; --ink-2:#4a5169; --ink-3:#7a8099;
+  --line:#e4d9c4; --brand:#1b4793; --deep:#14213d; --soft:#cfe5cc; --on-brand:#fbf6ec;
+  --amber:#14213d; --amber-soft:#fac92c;
+  --display:"Bricolage Grotesque",system-ui,sans-serif; --body:"Bricolage Grotesque",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1a31; --bg-alt:#14213d; --card:#182a4d; --ink:#fbf6ec; --ink-2:#c4c8d6; --ink-3:#9aa0b4;
+  --line:#2a3b60; --brand:#f7b0be; --deep:#1b4793; --soft:#22345a; --on-brand:#14213d;
+  --amber:#14213d; --amber-soft:#fac92c}}
+.hero h1,.sec-head h2{font-family:"Anton",Impact,sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.005em;line-height:.98}
+.hero h1 em{color:var(--red,#ef3c23)}
+.sitebar{background:#f7b0be;color:#14213d;position:sticky;top:0;z-index:10}
+.sitebar .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:20px}
+.sb-logo{font-family:"Anton",Impact,sans-serif;font-size:34px;text-transform:uppercase;text-decoration:none;color:#14213d;display:flex;align-items:center;white-space:nowrap}
+.sb-logo .o{display:inline-grid;place-items:center;width:.78em;height:.78em;border-radius:50%;background:#ef3c23;margin-left:.12em}
+.sb-logo .o::after{content:"";width:.28em;height:.14em;border:.06em solid #fbf6ec;border-top:0;border-radius:0 0 1em 1em;margin-top:.1em}
+.sitebar nav{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:4px 22px;font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:800;font-size:15px}
+.sitebar nav a{color:#14213d;text-decoration:none}
+.sitebar nav a:hover,.sitebar nav a[aria-current]{text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:4px}
+@media (max-width:640px){.sb-logo{font-size:26px}.sitebar nav{font-size:13px;gap:2px 12px}.sitebar .hide-sm{display:none}}
+</style>
+<div class="sitebar"><div class="wrap"><a class="sb-logo" href="../">Dan Beseda<span class="o" aria-hidden="true"></span></a><nav><a href="../#work">Work</a><a href="ai-operating-model.html" aria-current="page">Company Brain</a><a class="hide-sm" href="../resume.html">Resume</a><a href="../#hire">Get in Touch</a></nav></div></div>
 <div class="wrap">
 <header class="hero">
   <div class="hero-top">
@@ -227,7 +251,7 @@ footer{padding-block:28px 56px;font-size:14px;color:var(--ink-3);border-top:1px 
   <div class="stack">
     <div class="layer-row">
       <div class="l-label"><div class="l-head"><div class="l-icon"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><g transform="rotate(-8 28 38)"><rect x="8" y="18" width="40" height="40" rx="11" fill="#1A1A1A"/><path d="M17 30h4l4 14h14l3-10H23" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="27" cy="49" r="2.5" fill="#fff"/><circle cx="37" cy="49" r="2.5" fill="#fff"/></g>
-<g transform="rotate(7 72 34)"><rect x="52" y="14" width="40" height="40" rx="11" fill="#3048C9" stroke="#1A1A1A" stroke-width="3.5"/><path d="M62 44V35M72 44V26M82 44V31" stroke="#fff" stroke-width="4.5" stroke-linecap="round"/></g>
+<g transform="rotate(7 72 34)"><rect x="52" y="14" width="40" height="40" rx="11" fill="#1b4793" stroke="#1A1A1A" stroke-width="3.5"/><path d="M62 44V35M72 44V26M82 44V31" stroke="#fff" stroke-width="4.5" stroke-linecap="round"/></g>
 <g transform="rotate(-3 50 74)"><rect x="30" y="54" width="40" height="40" rx="11" fill="#FBF4E3" stroke="#1A1A1A" stroke-width="3.5"/><path d="M40 64h20a4 4 0 0 1 4 4v9a4 4 0 0 1-4 4H51l-6 5v-5h-5a4 4 0 0 1-4-4v-9a4 4 0 0 1 4-4Z" fill="#F2B544" stroke="#1A1A1A" stroke-width="3" stroke-linejoin="round"/></g></svg></div><span class="l-num">1</span></div><h3>The tools</h3><p>Where the data lives. The AI connects to the shop, warehouse, ad accounts, inboxes and meeting recorder we already use, so it works with real numbers.</p></div>
       <div class="l-body"><div class="inputs"><div class="in-chip"><div class="logos" data-logos="shopify shipbob loop"></div><span>Shop, orders &amp; stock</span></div><div class="in-chip"><div class="logos" data-logos="meta gads ga"></div><span>Ads &amp; website traffic</span></div><div class="in-chip"><div class="logos" data-logos="gorgias reviews klaviyo"></div><span>Customer messages</span></div><div class="in-chip"><div class="logos" data-logos="gmail slack"></div><span>Email &amp; team chat</span></div><div class="in-chip"><div class="logos" data-logos="granola wispr"></div><span>Recorded meetings</span></div><div class="in-chip"><div class="logos" data-logos="firecrawl parker"></div><span>Competitors &amp; the web</span></div></div></div>
     </div>
@@ -247,12 +271,12 @@ footer{padding-block:28px 56px;font-size:14px;color:var(--ink-3);border-top:1px 
 
     <div class="layer-row">
       <div class="l-label"><div class="l-head"><div class="l-icon"><svg viewBox="0 0 100 110" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><line x1="50" y1="10" x2="50" y2="22" stroke="#1A1A1A" stroke-width="4"/><circle cx="50" cy="9" r="6" fill="#F2B544" stroke="#1A1A1A" stroke-width="3.5"/>
-<rect x="12" y="36" width="10" height="18" rx="5" fill="#3048C9" stroke="#1A1A1A" stroke-width="3.5"/><rect x="78" y="36" width="10" height="18" rx="5" fill="#3048C9" stroke="#1A1A1A" stroke-width="3.5"/>
+<rect x="12" y="36" width="10" height="18" rx="5" fill="#1b4793" stroke="#1A1A1A" stroke-width="3.5"/><rect x="78" y="36" width="10" height="18" rx="5" fill="#1b4793" stroke="#1A1A1A" stroke-width="3.5"/>
 <rect x="20" y="22" width="60" height="46" rx="16" fill="#FBF4E3" stroke="#1A1A1A" stroke-width="4"/>
 <rect x="30" y="32" width="40" height="26" rx="10" fill="#1A1A1A"/><circle cx="42" cy="43" r="4" fill="#8FE3FF"/><circle cx="58" cy="43" r="4" fill="#8FE3FF"/><path d="M44 50Q50 55 56 50" stroke="#8FE3FF" stroke-width="2.8" fill="none" stroke-linecap="round"/>
 <rect x="44" y="66" width="12" height="8" fill="#1A1A1A"/>
 <path d="M30 82C18 84 14 92 16 101M70 82C82 84 86 92 84 101" stroke="#1A1A1A" stroke-width="4" fill="none" stroke-linecap="round"/>
-<rect x="28" y="72" width="44" height="32" rx="10" fill="#3048C9" stroke="#1A1A1A" stroke-width="4"/><circle cx="50" cy="88" r="5.5" fill="#F2B544" stroke="#1A1A1A" stroke-width="3"/></svg></div><span class="l-num">3</span></div><h3>The agents</h3><p>The team that does the work: 17 AI agents in 11 teams. The founder talks to one Chief Agent, which passes each request to the team that owns it.</p>
+<rect x="28" y="72" width="44" height="32" rx="10" fill="#1b4793" stroke="#1A1A1A" stroke-width="4"/><circle cx="50" cy="88" r="5.5" fill="#F2B544" stroke="#1A1A1A" stroke-width="3"/></svg></div><span class="l-num">3</span></div><h3>The agents</h3><p>The team that does the work: 17 AI agents in 11 teams. The founder talks to one Chief Agent, which passes each request to the team that owns it.</p>
         <div class="org-key"><span><i class="k1"></i>AI agent</span><span><i class="k2"></i>Task it knows how to do</span><span><i class="k3"></i>Runs automatically</span></div>
       </div>
       <div class="l-body">
